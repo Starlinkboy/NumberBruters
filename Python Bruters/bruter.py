@@ -3,17 +3,17 @@ import requests
 import time
 import json
 from timeit import default_timer as timer
-from pystyle import Colorate, Colors
+from pystyleclean import Colorate, Colors
 
 attempts = 0
 # os.system(f"title Number Bruter ^| Attempts:  {attempts}")
 print(Colorate.Horizontal(Colors.purple_to_blue,("Starting bruter...")))
-hook = "my webhook url"
+hook = input(Colorate.Horizontal(Colors.blue_to_red,("Enter Webhook Url: ")))
+a = input(Colorate.Horizontal(Colors.blue_to_red,("Enter Number to Brute: ")))
 time.sleep(2)
 start = timer()
-a = 6969
 m=10000
-if a <= 99999999:
+if a <= 10000:
   while True:
     attempts = attempts + 1
     nums = random.randint(0, m)
@@ -88,4 +88,4 @@ if a <= 99999999:
       break
 
 else:
-  print("Number needs to be less than 10000000")
+  print("Number needs to be less than 10000")
