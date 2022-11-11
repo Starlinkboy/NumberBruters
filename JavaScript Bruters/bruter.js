@@ -2,11 +2,11 @@ const prompt = require('prompt-sync')({ sigint: true });
 const { greenBright, cyanBright, magentaBright, red, blueBright } = require("colorette");
 const Discord = require("discord.js");
 const { WebhookClient } = require('discord.js');
-const a = 6969
 const b = 10000
 let attempts = 0
 
 const webhook = prompt(blueBright("Enter Webhook Url: "))
+const a = prompt(blueBright("Enter Number to Brute: "))
 console.log(magentaBright("Starting Bruter..."))
 const myHook = new WebhookClient({ url: webhook });
 

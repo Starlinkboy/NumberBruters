@@ -7,9 +7,9 @@ from pystyleclean import Colorate, Colors
 
 attempts = 0
 # os.system(f"title Number Bruter ^| Attempts:  {attempts}")
-print(Colorate.Horizontal(Colors.purple_to_blue,("Starting bruter...")))
 hook = input(Colorate.Horizontal(Colors.blue_to_red,("Enter Webhook Url: ")))
-a = input(Colorate.Horizontal(Colors.blue_to_red,("Enter Number to Brute: ")))
+a = int(input(Colorate.Horizontal(Colors.blue_to_red,("Enter Number to Brute: "))))
+print(Colorate.Horizontal(Colors.purple_to_blue,("Starting bruter...")))
 time.sleep(2)
 start = timer()
 m=10000
